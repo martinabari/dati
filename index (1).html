@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violazione Privacy</title>
+    <style>
+        body {
+            background-color: black;
+            color: #00FF00;
+            font-family: 'Courier New', monospace;
+            text-align: left;
+            padding: 50px;
+        }
+        h1 {
+            text-align: left;
+            font-size: 1.8em;
+            font-weight: 550;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            text-align: left;
+            font-size: 1.2em;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        .content {
+            white-space: pre-line;
+            font-size: 1.2em;
+        }
+        .separator {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .privacy-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #005500;
+            color: #00FF00;
+            font-size: 1.2em;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            border: 2px solid #00FF00;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .privacy-button:hover {
+            background-color: #007700;
+        }
+        .hidden {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.4em;
+            line-height: 1.8em;
+        }
+    </style>
+    <script>
+        function togglePrivacyDetails() {
+            const details = document.getElementById('privacy-details');
+            if (details.classList.contains('hidden')) {
+                details.classList.remove('hidden');
+            } else {
+                details.classList.add('hidden');
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h1>INFORMAZIONI SUL SOGGETTO</h1>
+    <div class="content">
+        [Nome completo]: Marta Russo<br>
+        [Data di nascita]: 02/05/2002<br>
+        [Nazionalità]: Italiana<br>
+        [Codice fiscale]: RSSMRT85C54H501B<br>
+        [Indirizzo]: Viale Lombardia, 88, 20131, (MI)<br>
+        [Numero di telefono]: +39 329 5546789<br>
+        [Email]: marta.russo85@email.it<br>
+        [IBAN]: IT60R0103005104000001234567<br>
+        <br>
+        [Segni caratteriali]: Introversa, empatica, precisa<br>
+        [Ideali]: Ecologista, promotrice della sostenibilità<br>
+        [Orientamento religioso]: Agnostica<br>
+        [Preferenze politiche]: Sinistra<br>       
+        [Orientamento sessuale]: Eterosessuale<br>
+        [Posizione esatta dello scatto]: 41.8829° N, 12.4813° E<br>
+    </div>
+
+    <div class="separator">...</div>
+    <div class="separator">...</div>
+    <div class="separator">...</div>
+    <div class="separator">...</div>
+    <div class="separator">...</div>
+
+    <h1>DETTAGLI DISPOSITIVO OSSERVATORE</h1>
+    <div class="content">
+        [Posizione geografica]: Milano, Italia<br>
+        [Dispositivo connesso]: Smartphone<br>
+        [Siti visitati di frequente]: social media, e-commerce, streaming<br>
+        [App utilizzate]: giochi, servizi bancari, messaggistica<br>
+    </div>
+
+    <div class="separator">...</div>
+    <div class="separator">...</div>
+    <div class="separator">...</div>
+    <div class="separator">...</div>
+    <div class="separator">...</div>
+
+    <div class="content">
+        Questi dati sono fittizi e creati esclusivamente per dimostrare cosa accade quando la privacy di un individuo viene violata attraverso l’uso di social network, cookie e strumenti online.
+        Le informazioni raccolte e condivise in modo non autorizzato possono rivelare dettagli profondi e personali, evidenziando quanto sia importante tutelare la propria sicurezza digitale e navigare con consapevolezza.
+
+Ti sei mai chiesto cosa accade ai tuoi dati quando clicchi "Accetta"? 
+Ogni volta che autorizzi i cookie o condividi un post sui social, sai davvero chi sta osservando? 
+Ti sembra normale che dopo aver cercato un prodotto online, inizi a vedere pubblicità ovunque?
+Ogni "Mi piace" contribuisce a creare un profilo su di te. 
+Ti senti a tuo agio sapendo che aziende o agenzie potrebbero usarlo per influenzarti? 
+E cosa succede quando inserisci il tuo indirizzo email? 
+Sai che potrebbe essere venduto o usato per scopi che non conosci?
+Ti hanno detto che i cookie sono innocui, ma ti sei mai chiesto perché tracciano ogni tua mossa?
+E quanto sei certo che i tuoi dati siano davvero al sicuro? 
+Violazioni e furti di informazioni accadono perché spesso le piattaforme non proteggono abbastanza.
+<br><br>Pensi di essere libero online? 
+
+    <div class="separator">...</div>
+    <div class="separator">...</div>
+    <div class="separator">...</div>
+    <div class="separator">...</div>
+    <div class="separator">...</div>
+        
+Oppure percepisci un’ombra invisibile che studia ogni tua scelta, prevedendo le tue mosse? 
+Se tutto ciò che fai contribuisce a creare un’immagine digitale di te, un’immagine che può essere comprata e venduta, come ti sentiresti?
+Non è il momento di ripensare a cosa condividi e a chi lo permetti? 
+Chi controlla davvero la tua vita online?
+
+    <div class="separator">...</div>
+    <div class="separator">...</div>
+    <div class="separator">...</div>
+    <div class="separator">...</div>
+    <div class="separator">...</div><br>
+    </div>
+
+    <!-- Pulsante per mostrare i dettagli -->
+    <div class="separator">...</div>
+    <a class="privacy-button" onclick="togglePrivacyDetails()">Difendi la tua privacy: 10 mosse per proteggere i tuoi dati</a>
+
+    <!-- Testo nascosto inizialmente -->
+    <div id="privacy-details" class="hidden">
+      <div class="separator">...</div>
+        Nel mondo digitale di oggi, ogni clic, ricerca o interazione è una potenziale traccia lasciata dietro di te. 
+        Non permettere che i tuoi dati personali vengano sfruttati senza il tuo consenso. 
+        <br>
+        Ecco dieci semplici, ma potenti azioni che puoi fare per difendere la tua privacy e rimanere in controllo della tua identità digitale:<br><br>
+        <h2>1. Esplora le politiche sulla privacy<br>
+        Prima di dare il via libera a qualsiasi app o sito web, fermati un attimo. Dai un'occhiata a come i tuoi dati verranno utilizzati. Scopri cosa raccolgono, perché lo fanno e con chi condividono le informazioni. Non accettare senza capire.<br><br>
+        2. Gestisci le autorizzazioni delle app<br>
+        Le app che usi possono raccogliere più informazioni di quanto pensi. Controlla regolarmente cosa hai autorizzato. Se un’app non ha bisogno di accedere alla tua fotocamera, al microfono o alla posizione, disabilita subito quei permessi.<br><br>
+        3. Rifiuta i cookie invasivi<br>
+        Quando navighi, spesso ti vengono chiesti permessi per i cookie. Rifiuta quelli non necessari, specialmente quelli pubblicitari e di tracciamento, e limita così la raccolta di informazioni su di te.<br><br>
+        4. Scegli un browser che ti protegga<br>
+        Usa browser che offrono protezione contro i tracker e le intrusioni, come Brave, Firefox o Safari. Inoltre, naviga in modalità "incognito" per nascondere il più possibile le tue tracce online.<br><br>
+        5. Fai attenzione a cosa condividi sui social media<br>
+        Evita di svelare troppi dettagli personali sui social network. Ogni singola informazione può essere usata per costruire un profilo su di te, influenzando in modo sottile le tue scelte.<br><br>
+        6. Crea password sicure e uniche<br>
+        Non usare la stessa password per più account! Scegli combinazioni robuste e difficili da indovinare. Utilizza un gestore di password per tenere tutto al sicuro e facilmente accessibile solo a te.<br><br>
+        7. Controlla i consensi che dai<br>
+        Non lasciare che le caselle preselezionate facciano il lavoro per te. Ogni volta che accetti una newsletter o un servizio, verifica che non ci siano spunte automatiche per iscrizioni non desiderate o per la condivisione dei tuoi dati.<br><br>
+        8. Mantieni sempre aggiornati i tuoi dispositivi<br>
+        Gli aggiornamenti non sono solo per nuove funzionalità: sono essenziali per proteggerti da vulnerabilità che potrebbero essere sfruttate da hacker. Assicurati che i tuoi dispositivi siano sempre aggiornati.<br><br>
+        9. Proteggi la tua connessione con una VPN<br>
+        Quando ti colleghi a una rete Wi-Fi pubblica, una VPN (Virtual Private Network) è il tuo scudo. Crittografa la tua connessione, impedendo che chiunque possa intercettare i tuoi dati sensibili.<br><br>
+        10. Stai in guardia contro le email sospette<br>
+        Non aprire mai allegati o cliccare su link provenienti da mittenti sconosciuti. Potrebbero essere tentativi di phishing per rubare le tue informazioni personali. Se hai dubbi, non rischiare.<br><br></h2>
+   
+         <div class="separator">...</div>
+         <div class="separator">...</div>
+         <div class="separator">...</div>
+        Ogni dato che condividi può essere utilizzato in modi che non immagini nemmeno.<br>
+        Dalla pubblicità mirata che ti segue ovunque, fino a manipolazioni più sottili delle tue scelte quotidiane.<br>
+        Difendere la tua privacy non è solo una questione di sicurezza, ma di controllo sulla tua vita digitale.<br><br>
+        Agire consapevolmente è il primo passo per proteggerti.<br>
+        Ogni clic che fai online ha delle conseguenze.<br>
+        Ricorda: ogni decisione conta, e proteggere i tuoi dati è il primo passo per rimanere padrone della tua identità digitale.<br>
+    </div>
+
+</body>
+</html>

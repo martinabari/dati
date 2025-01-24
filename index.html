@@ -1,4 +1,79 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caricamento Iniziale</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: green;
+      font-family: "Courier New", Courier, monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #loading-screen {
+      text-align: center;
+    }
+
+    #progress-bar {
+      width: 300px;
+      height: 20px;
+      border: 2px solid green;
+      margin: 20px auto;
+      position: relative;
+    }
+
+    #progress {
+      width: 0%;
+      height: 100%;
+      background-color: green;
+    }
+
+    #loading-text {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="loading-screen">
+    <div id="progress-bar">
+      <div id="progress"></div>
+    </div>
+    <div id="loading-text">Caricamento: 0%</div>
+  </div>
+
+  <script>
+    const progressElement = document.getElementById("progress");
+    const loadingTextElement = document.getElementById("loading-text");
+
+    let progress = 0;
+
+    const loadingInterval = setInterval(() => {
+      progress++;
+      progressElement.style.width = progress + "%";
+      loadingTextElement.textContent = `Caricamento: ${progress}%`;
+
+      if (progress === 100) {
+        clearInterval(loadingInterval);
+
+        // Mostra il contenuto principale dopo il caricamento
+        document.body.innerHTML = `
+          <h1>Benvenuto!</h1>
+          <p>Il caricamento è completato e il sito è pronto.</p>
+        `;
+      }
+    }, 50); // Tempo tra ogni incremento (50ms = 5 secondi totali)
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
